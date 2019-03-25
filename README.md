@@ -4,6 +4,10 @@
 
 Docker files for HRConvert2 from https://github.com/zelon88/HRConvert2 - A self-hosted, drag-and-drop, & nosql file conversion server that supports 62x file formats.
 
+## Docker Hub
+https://hub.docker.com/r/dwaaan/hrconvert2-docker
+docker pull dwaaan/hrconvert2-docker
+
 
 ## Dockerfile (Building the image yourself)
 
