@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    image: dwaaan/hrconvert2-docker:latest
+    restart: always
+    ports:
+      - 8085:80
+    volumes:
+      - ./config.php:/var/www/html/HRProprietary/HRConvert2/config.php

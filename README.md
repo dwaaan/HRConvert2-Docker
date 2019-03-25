@@ -7,12 +7,16 @@ Docker files for HRConvert2 from https://github.com/zelon88/HRConvert2 - A self-
 
 ## Dockerfile (Building the image yourself)
 
-1. $ git clone https://github.com/dwaaan/HRConvert2-Docker
+1. git clone https://github.com/dwaaan/HRConvert2-Docker
 2. Edit config.php
 3. Set Ubuntu repos in Dockerfile (currently set to Australia)
-4. $ docker build -t hrconvert2 .
-5. run docker images, copy the image ID
-6. docker run -i -t [ID]
+4. docker build -t hrconvert2 .
+5. docker images,copy the image ID
+6. docker run -i -t hrconvert2
  
 
+## docker-compose.yml
 
+1. git clone https://github.com/dwaaan/HRConvert2-Docker
+2. Edit config.php
+3. docker-compose up (-d to run in background)
