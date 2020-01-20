@@ -42,7 +42,7 @@ rm -rf /var/www/html/index.html && \
 
 COPY index.html /var/www/html/index.html
 
-chmod -R 0755 /var/www/html && \
+RUN chmod -R 0755 /var/www/html && \
 chown -R www-data /var/www/html && \
 chgrp -R www-data /var/www/html && \
 rm -rf /var/www/html/HRProprietary/HRConvert2/config.php
