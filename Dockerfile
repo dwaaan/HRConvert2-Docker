@@ -33,7 +33,7 @@ mkdir /var/www/html/HRProprietary/HRConvert2 && \
 mkdir /home/converter && \
 chmod -R 0755 /home/converter && \
 chown -R www-data /home/converter && \
-chgrp -R www-data /home/converter &&
+chgrp -R www-data /home/converter
 
 RUN wget https://github.com/zelon88/HRConvert2/archive/v2.4.zip -O /tmp/2.4.zip && \
 unzip /tmp/2.4.zip -d /tmp/ && \
