@@ -25,6 +25,7 @@ RUN mkdir -p $APACHE_RUN_DIR && \
 mkdir -p $APACHE_LOCK_DIR && \
 mkdir -p $APACHE_LOG_DIR
 
+
 COPY uploads.ini /etc/php/7.2/apache2/conf.d/uploads.ini
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 
