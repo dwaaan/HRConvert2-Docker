@@ -1,4 +1,4 @@
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/dwaaan/phpaste-docker.svg)![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dwaaan/phpaste-docker.svg) [![](https://images.microbadger.com/badges/image/dwaaan/phpaste-docker.svg)](https://microbadger.com/images/dwaaan/phpaste-docker )
+![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/dwaaan/hrconvert2-docker.svg)![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/dwaaan/hrconvert2-docker.svg) [![](https://images.microbadger.com/badges/image/dwaaan/hrconvert2-docker.svg)](https://microbadger.com/images/dwaaan/hrconvert2-docker )
 
 # HRConvert2-Docker
 
