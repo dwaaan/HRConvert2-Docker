@@ -39,7 +39,7 @@ chgrp -R www-data /home/converter
 RUN wget https://github.com/zelon88/HRConvert2/archive/v2.6.zip -O /tmp/2.6.zip && \
 unzip /tmp/2.6.zip -d /tmp/ && \
 mv /tmp/HRConvert2-2.6/* /var/www/html/HRProprietary/HRConvert2 && \
-rm -rf /var/www/html/index.html && \
+rm -rf /var/www/html/index.html
 
 COPY index.html /var/www/html/index.html
 
