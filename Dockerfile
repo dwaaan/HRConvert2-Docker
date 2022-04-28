@@ -1,7 +1,5 @@
 FROM ubuntu:18.04
 
-MAINTAINER Dylan Leahy <dylan@adr3nalin3.net>
-
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 EXPOSE 80
 
