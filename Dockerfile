@@ -1,13 +1,14 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 EXPOSE 80
 
 RUN apt-get update && \
+apt-get upgrade -yy && \
 apt-get install -y apache2 default-jre php php-mysql \ 
 php-all-dev php-zip php-gd php-curl clamav libreoffice-common \ 
 unoconv p7zip-full imagemagick unrar-free ffmpeg tesseract-ocr \ 
-meshlab dia pandoc poppler-utils zip unzip wget && \
+meshlab dia pandoc poppler-utils zip unzip wget --no-install-recommends && \
 apt-get clean && \ 
 rm -rf /var/lib/apt/lists/*
 
@@ -34,9 +35,9 @@ chmod -R 0755 /home/converter && \
 chown -R www-data /home/converter && \
 chgrp -R www-data /home/converter
 
-RUN wget https://github.com/zelon88/HRConvert2/archive/v2.6.zip -O /tmp/2.6.zip && \
-unzip /tmp/2.6.zip -d /tmp/ && \
-mv /tmp/HRConvert2-2.6/* /var/www/html/HRProprietary/HRConvert2 && \
+RUN wget https://github.com/zelon88/HRConvert2/archive/v2.9.2.zip -O /tmp/2.9.2.zip && \
+unzip /tmp/2.9.2.zip -d /tmp/ && \
+mv /tmp/HRConvert2-2.9.2/* /var/www/html/HRProprietary/HRConvert2 && \
 rm -rf /var/www/html/index.html
 
 COPY index.html /var/www/html/index.html

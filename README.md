@@ -6,21 +6,20 @@ Docker files for HRConvert2 from https://github.com/zelon88/HRConvert2 - A self-
 
 ## Docker Hub
 https://hub.docker.com/r/dwaaan/hrconvert2-docker
-docker pull dwaaan/hrconvert2-docker
+`docker pull dwaaan/hrconvert2-docker`
 
 
 ## Dockerfile (Building the image yourself)
 
-1. git clone https://github.com/dwaaan/HRConvert2-Docker
-2. Edit config.php
-3. Set Ubuntu repos in Dockerfile (currently set to Australia)
-4. docker build -t hrconvert2 .
-5. docker images,copy the image ID
-6. docker run -i -t hrconvert2
+1. `git clone https://github.com/dwaaan/HRConvert2-Docker`
+2. `Edit config.php`
+3. `docker build -t hrconvert2 .`
+4. `docker images,copy the image ID`
+5. `docker run -i -t hrconvert2`
  
 
-## docker-compose.yml
+## Docker Compose Setup
 
-1. git clone https://github.com/dwaaan/HRConvert2-Docker
-2. Edit config.php
-3. docker-compose up (-d to run in background)
+1. `git clone https://github.com/dwaaan/HRConvert2-Docker`
+2. Edit config.php - make sure to atleast set the salts and the URL
+3. `docker-compose up -d`
