@@ -20,11 +20,10 @@ https://hub.docker.com/r/dwaaan/hrconvert2-docker
 
 1. `git clone https://github.com/dwaaan/HRConvert2-Docker`
 2. Edit config.php - make sure to atleast set the salts and the URL
-3. `mkdir logs`
-4. `docker-compose up -d`
+3. `docker-compose up -d`
 
 
-## Updates 10/05/2022
+### Updates 10/05/2022
 * updated base image to ubuntu 20.04
 * updated php from 7.2 to 7.4
 * updated HRConvert2 from 2.6 to 2.9.2
