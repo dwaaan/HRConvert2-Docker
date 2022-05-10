@@ -7,4 +7,3 @@ services:
       - 8085:80
     volumes:
       - ./config.php:/var/www/html/HRProprietary/HRConvert2/config.php
-      - ./logs:/var/www/html/HRProprietary/HRConvert2/Logs:rw
