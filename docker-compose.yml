@@ -7,3 +7,5 @@ services:
       - 8085:80
     volumes:
       - ./config.php:/var/www/html/HRProprietary/HRConvert2/config.php
+# uncomment the below line to expose temporary upload folder as a volume
+#     - ./files:/home/converter:rw
