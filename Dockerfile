@@ -13,7 +13,7 @@ RUN apt-get update -y && \
     apt-get install -y apache2 default-jre php php-mysql \ 
                        php-all-dev php-zip php-gd php-curl clamav libreoffice-common \ 
                        unoconv p7zip-full imagemagick ffmpeg tesseract-ocr \ 
-                       meshlab dia pandoc poppler-utils zip unzip wget rar unrar --no-install-recommends && \
+                       meshlab dia pandoc poppler-utils zip unzip wget unrar --no-install-recommends && \
     apt-get clean && \ 
     rm -rf /var/lib/apt/lists/*
 
