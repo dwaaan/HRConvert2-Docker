@@ -18,6 +18,9 @@ $VirusScan = FALSE;
 $ApplicationName = 'HRConvert2';
 $ApplicationTitle = 'Convert Anything!';
 
+$SupportedGuis = array('Default');
+$DefaultGui = 'Default';
+$AllowUserSelectableGui = FALSE;
 $SupportedLanguages = array('en', 'fr', 'es', 'zh', 'hi', 'ar', 'ru', 'uk', 'bn', 'de', 'ko', 'it', 'pt');
 //Default language
 $DefaultLanguage = 'en';
@@ -25,6 +28,7 @@ $AllowUserSelectableLanguage = TRUE;
 
 //Set to FALSE to disable users creating share links
 $AllowUserShare = TRUE;
+$SupportedConversionTypes = array('Document', 'Image', 'Model', 'Drawing', 'Video', 'Subtitle', 'Audio', 'Archive', 'Stream', 'OCR');
 
 //Button colour - RED,GREEN,BLUE,GREY
 $ButtonStyle = 'BLUE';
