@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 
-ARG VERSION=2.9.2
+ARG VERSION=3.1
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 EXPOSE 80
