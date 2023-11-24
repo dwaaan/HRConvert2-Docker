@@ -3,7 +3,7 @@ FROM ubuntu:20.04
 ARG VERSION=2.9.2
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
-EXPOSE 80
+EXPOSE 8085
 
 RUN apt-get update -y && \
     apt-get install -y software-properties-common --no-install-recommends && \
@@ -28,7 +28,8 @@ ENV APACHE_LOG_DIR   /var/log/apache2
 RUN mkdir -p $APACHE_RUN_DIR && \
     mkdir -p $APACHE_LOCK_DIR && \
     mkdir -p $APACHE_LOG_DIR
-
+RUN sed -i 's/80/8085/g' /etc/apache2/ports.conf
+RUN sed -i 's/80/8085/g' /etc/apache2/sites-available/000-default.conf
 
 COPY uploads.ini /etc/php/7.4/apache2/conf.d/uploads.ini
 CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
